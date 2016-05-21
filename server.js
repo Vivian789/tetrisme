@@ -4,7 +4,15 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 var redis   = require("redis");
-var client  = redis.createClient();
+if (process.env.REDIS_URL) {
+    // production
+    var rtg = require("url").parse(process.env.REDIS_URL);
+    var client = redis.createClient(rtg.port, rtg.hostname);
+    client.auth(rtg.auth.split(":")[1]);
+} else {
+    // development
+    var client = redis.createClient();
+}
 
 app.use(express.static(__dirname + '/public'));
 
