@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> AYY WUTTUP A TETRIS FRANS </title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body onload = "controller();">
+	<div class = "wrapper">
+		<canvas id = "self" class = "canvas" width = "300" height = "660">NOPE.JPG</canvas>
+		<div class = "piecewrapper">
+		  <span class = "holderini">holderini</span>
+		  <canvas id = "hold" class = "canvas" width = "120" height = "120">NOPE.JPG</canvas>
+		  
+		  <span class = "nexterini">nexterini</span>
+		  <canvas id = "next" class = "canvas" width = "120" height = "120">NOPE.JPG</canvas>
+		  
+		  <div id = "message">
+		    offline
+		  </div>
+		  <div id = "game-id"></div>
+		  <div id = "new-game">New Game!</div>
+		  <div id = "tetris"><span class = "colors">TETRIS</span><br><span class = "cat">😺</span><br>Rekt➜</div>
+		</div>
+		<canvas id = "opponent" class = "canvas" width = "300" height = "660">NOPE.JPG</canvas>
+	</div>
+<span style = "font-size: 16px;">Special Thanks Nora Brownell for colors!</span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/board.js"></script>
+<script src="/piece.js"></script>
+<script src="/controller.js"></script>
+</body>
+</html>

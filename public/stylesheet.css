@@ -1,0 +1,105 @@
+body{
+	background-color: black;
+	color: #FFB6C1;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+.piecewrapper{
+	display:flex;
+	flex-direction:column;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 30px;
+}
+
+#self, #opponent{
+	background-color: black;
+	border: 1px solid white;
+	box-shadow: 0px 0px 7px white;
+}
+
+#hold, #next{
+	background-color: black;
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+}
+
+#next{			
+	border: 1px solid #AEEAFF;
+	box-shadow: 0px 0px 7px #AEEAFF;
+}
+
+.nexterini{
+	text-shadow: 0px 0px 20px #AEEAFF;
+	text-align: center;
+	color: #AEEAFF;
+}
+
+#hold{			
+	border: 1px solid #FFB6C1;
+	box-shadow: 0px 0px 7px #FFB6C1;
+}
+
+.holderini{
+    text-align: center;
+    text-shadow: 0px 0px 20px #FFB6C1;
+}
+
+#message{
+    color: #90EEBF;
+    text-align: center;
+    border: 1px solid #90EEBF;
+	margin: 5px;
+	width: 120px;
+	box-shadow: 0px 0px 7px #90EEBF;
+	text-shadow: 0px 0px 20px #90EEBF;
+}
+
+#new-game{
+    color: #ffd27f ;
+    text-align: center;
+    border: 1px solid #ffd27f;
+	margin: 5px;
+	width: 120px;
+	box-shadow: 0px 0px 7px #ffd27f;
+	text-shadow: 0px 0px 20px #ffd27f;
+}
+
+#new-game:hover{
+	color: #ffdb9b ;
+    text-shadow: 0px 0px 20px #ffae19;
+    box-shadow: 0px 0px 15px #ffae19;
+}
+
+#tetris{
+	color: #FC8181;
+    text-align: center;
+    border: 1px solid #FC8181;
+	margin: 5px;
+	width: 120px;
+	box-shadow: 0px 0px 7px #FC8181;
+	text-shadow: 0px 0px 20px #FC8181;
+}
+.colors{
+	font-weight: bold;
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FC8181), color-stop(0.15, #FCB66F), color-stop(0.3, #FFE896), color-stop(0.45, #8FF788), color-stop(0.6, #92EFF7),color-stop(0.75, #A59CF7), color-stop(0.9, #FFA8E2), color-stop(1, white) );
+	  color:transparent;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  text-shadow: none;
+}
+.cat{
+	color: #ffdb9b ;
+    text-shadow: 0px 0px 20px #ffae19;
+}
+
+}
+
+#game-id{
+    display: none;
+}
